@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "d88a8e3c-75a1-40c0-a8f9-bf72e0c70185",
+		"_postman_id": "8685b3f6-1740-411d-8bdd-5d9856470271",
 		"name": "dichvuin",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "23240413"
+		"_exporter_id": "31474114"
 	},
 	"item": [
 		{
@@ -16,42 +16,57 @@
 					"formdata": [
 						{
 							"key": "tenDangNhap",
-							"value": "sinhvien2",
+							"value": "sinhvien1",
 							"type": "text"
 						},
 						{
 							"key": "maMayIn",
-							"value": "MAY02",
+							"value": "MAY01",
 							"type": "text"
 						},
 						{
 							"key": "soBanIn",
-							"value": "2",
+							"value": "1",
 							"type": "text"
 						},
 						{
 							"key": "KhoGiay",
-							"value": "A",
+							"value": "A4",
 							"type": "text"
 						},
 						{
 							"key": "soTrangTrongFile",
-							"value": "4",
+							"value": "5",
 							"type": "text"
 						},
 						{
 							"key": "soMatIn",
-							"value": "4",
+							"value": "2",
 							"type": "text"
 						},
 						{
 							"key": "file",
 							"type": "file",
-							"src": "/C:/Users/HS/Downloads/TestReport.xls"
+							"src": "/C:/Users/Admin/Downloads/Capstone_Project_hk231_2023_v3.pdf"
 						},
 						{
-							"key": "TongSoTienThanhToan",
-							"value": "200000",
+							"key": "Pagespersheet",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "ThoiGianHenLay",
+							"value": "2023-11-29",
+							"type": "text"
+						},
+						{
+							"key": "CoSo",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "Toa",
+							"value": "H6",
 							"type": "text"
 						}
 					]
@@ -101,19 +116,68 @@
 			"response": []
 		},
 		{
-			"name": "LichSuGiaoDich",
+			"name": "MuaTrang",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tenDangNhap",
+							"value": "sinhvien2",
+							"type": "text"
+						},
+						{
+							"key": "soTrang",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "phuongThucThanhToan",
+							"value": "Momo",
+							"type": "text"
+						}
+					]
+				},
 				"url": {
-					"raw": "http://localhost/dichvuin/LichSuGiaoDich",
+					"raw": "http://localhost/dichvuin/MuaTrang",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
 						"dichvuin",
-						"LichSuGiaoDich"
+						"MuaTrang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LichSuMuaTrang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tenDangNhap",
+							"value": "sinhvien1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/dichvuin/LichSuMuaTrang",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dichvuin",
+						"LichSuMuaTrang"
 					]
 				}
 			},
