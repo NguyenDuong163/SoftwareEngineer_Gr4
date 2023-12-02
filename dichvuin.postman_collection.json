@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "d88a8e3c-75a1-40c0-a8f9-bf72e0c70185",
+		"name": "dichvuin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23240413"
+	},
+	"item": [
+		{
+			"name": "DichVuIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tenDangNhap",
+							"value": "sinhvien2",
+							"type": "text"
+						},
+						{
+							"key": "maMayIn",
+							"value": "MAY02",
+							"type": "text"
+						},
+						{
+							"key": "soBanIn",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "KhoGiay",
+							"value": "A",
+							"type": "text"
+						},
+						{
+							"key": "soTrangTrongFile",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "soMatIn",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/HS/Downloads/TestReport.xls"
+						},
+						{
+							"key": "TongSoTienThanhToan",
+							"value": "200000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/dichvuin/DichVuIn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dichvuin",
+						"DichVuIn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LichSuIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tenDangNhap",
+							"value": "sinhvien2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/dichvuin/LichSuIn/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dichvuin",
+						"LichSuIn",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LichSuGiaoDich",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/dichvuin/LichSuGiaoDich",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"dichvuin",
+						"LichSuGiaoDich"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
